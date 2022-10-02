@@ -1,5 +1,6 @@
 ```
 
+$ cd ~/hello_rust
 $ find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
 
 .
@@ -97,6 +98,7 @@ $ make
 $ mv hello libhello.so
 
 
+$ cd ~/hello_rust
 $ LD_LIBRARY_PATH=./src/hello/ cargo run
 $
 
