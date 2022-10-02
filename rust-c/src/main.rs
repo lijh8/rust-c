@@ -13,7 +13,7 @@ fn main() {
 
     unsafe {
 
-        strncpy2(dest.as_ptr() as *mut c_char,
+        strncpy2(dest.as_mut_ptr() as *mut c_char,
                  src.as_ptr() as *const c_char, LEN - 1);
         let s = str::from_utf8_unchecked(
             slice::from_raw_parts(dest.as_mut_ptr() as *mut u8, src.len()));
