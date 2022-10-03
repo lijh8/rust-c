@@ -8,5 +8,5 @@
 
 rustflags = [
     "-Lnative=/home/ljh/Documents/hello_rust/src/hello",
-    "-ldylib=hello"
+    "-ldylib=hello",
 ]
