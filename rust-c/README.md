@@ -69,7 +69,10 @@ $ cat .cargo/config.toml
 # https://doc.rust-lang.org/cargo/reference/config.html
 # https://doc.rust-lang.org/rustc/command-line-arguments.html
 
-rustflags = ["-Lnative=/home/ljh/Documents/hello_rust/src/hello", "-ldylib=hello"]
+rustflags = [
+    "-Lnative=/home/ljh/Documents/hello_rust/src/hello", 
+    "-ldylib=hello",
+]
 $
 
 
